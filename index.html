@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b10"><title>LOXI | Handle Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">L</span><span><b id="brandName">LOXI LAB</b><small>HANDLE RESEARCH TOOL</small></span></a>
+    <nav><a class="active" href="index.html">الرئيسية</a><a href="#about">عن الأداة</a><a href="admin.html">الإدارة</a></nav>
+    <span class="status"><i></i> الواجهة جاهزة</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow"><span></span> TIKTOK USERNAME WORKSPACE</div>
+      <h1>مختبر اليوزرات<span>.</span></h1>
+      <p>مساحة مرتبة لتوليد أسماء مستخدمين، حفظ المرشّحات، وتسجيل نتيجة التحقق اليدوي.</p>
+      <div class="hero-tags"><span>بدون تسجيل دخول</span><span>محفوظات محلية</span><span>واجهة عربية</span></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head"><div><small class="kicker">01 / GENERATOR</small><h2>ولّد قائمة يوزرات</h2></div><span class="badge">محلي فقط</span></div>
+      <div class="form-grid">
+        <label>كلمة أو اسم أساسي<input id="seed" maxlength="18" placeholder="مثال: loxi"></label>
+        <label>عدد الاقتراحات<select id="count"><option>10</option><option selected>20</option><option>30</option><option>50</option></select></label>
+        <label>النمط<select id="pattern"><option value="mix">متنوع</option><option value="clean">قصير ونظيف</option><option value="dots">نقاط وشرطات سفلية</option><option value="digits">مع أرقام</option></select></label>
+      </div>
+      <button class="btn primary" id="generate">✦ إنشاء اقتراحات</button>
+      <p class="hint">الاقتراحات أسماء محتملة فقط، ولا تعني أن اليوزر متاح.</p>
+    </section>
+
+    <section class="panel">
+      <div class="section-head"><div><small class="kicker">02 / CANDIDATES</small><h2>قائمة المرشّحات</h2></div><span class="count" id="totalCount">0 اسم</span></div>
+      <div class="toolbar">
+        <input id="manualInput" placeholder="أضف يوزر بنفسك بدون @">
+        <button class="btn secondary" id="addOne">إضافة</button>
+        <button class="btn ghost" id="export">تصدير TXT</button>
+      </div>
+      <div class="list-head"><span>اسم المستخدم</span><span>الحالة</span><span>إجراء</span></div>
+      <div id="candidateList" class="candidate-list"><div class="empty">ما فيه أسماء للحين. أنشئ اقتراحات وابدأ ترتيب قائمتك.</div></div>
+    </section>
+
+    <section class="panel note-panel" id="about">
+      <div class="note-icon">ⓘ</div><div><h3>ملاحظة التحقق</h3><p>هذه نسخة واجهة مستقلة: لا تتصل بتيك توك ولا تفحص التوفر تلقائياً. استخدم التحقق اليدوي داخل التطبيق الرسمي، ثم سجّل النتيجة هنا. لا تدخل كلمات مرور أو رموز تحقق.</p></div>
+    </section>
+    <footer><span>© <span id="year"></span> <b id="footerBrand">LOXI LAB</b> — جميع الحقوق محفوظة.</span><span>Built with care · v1.0</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body></html>

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090b10"><title>الإدارة | LOXI LAB</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="ambient"></div><header class="topbar wrap"><a class="brand" href="index.html"><span class="brand-mark">L</span><span><b>LOXI LAB</b><small>CONTROL CENTER</small></span></a><nav><a href="index.html">الرئيسية</a><a class="active" href="admin.html">الإدارة</a></nav><span class="status"><i></i> إعدادات محلية</span></header>
+<main class="wrap admin-main"><section class="hero compact"><div class="eyebrow"><span></span> ADMINISTRATION</div><h1>لوحة التحكم<span>.</span></h1><p>تخصيص هوية الواجهة وإدارة بياناتها على هذا الجهاز.</p></section>
+<section class="panel"><div class="section-head"><div><small class="kicker">01 / BRANDING</small><h2>هوية الموقع</h2></div></div>
+<label>اسم الموقع<input id="adminBrand" maxlength="24" placeholder="LOXI LAB"></label>
+<label>رابط حساب إنستغرام (اختياري)<input id="instagram" type="url" placeholder="https://instagram.com/username"></label>
+<button class="btn primary" id="saveSettings">حفظ الإعدادات</button><p class="hint" id="saveMsg">تُحفظ الإعدادات في متصفحك فقط.</p></section>
+<section class="panel"><div class="section-head"><div><small class="kicker">02 / DATA</small><h2>إدارة القائمة</h2></div></div><p class="muted">تقدر تمسح جميع الأسماء المحفوظة على هذا الجهاز.</p><button class="btn danger" id="clearAll">حذف كل المرشّحات</button></section>
+<section class="panel"><div class="section-head"><div><small class="kicker">03 / INTEGRATION</small><h2>مكان ربط أداة الفحص</h2></div><span class="badge">قريباً</span></div><p class="muted">خصص هذا القسم لاحقاً لربط واجهة مع خدمة تملكها أو API رسمي ومصرّح به. لا تضع مفاتيح API السرية داخل ملفات المتصفح؛ يلزم خادم لحمايتها.</p></section>
+<footer><span>© <span id="year"></span> LOXI LAB — جميع الحقوق محفوظة.</span><a href="index.html">العودة للرئيسية</a></footer></main><script src="app.js"></script></body></html>
